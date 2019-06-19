@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-21T17:35:37 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="simple_jasper_report" pageWidth="595" pageHeight="792" columnWidth="500" leftMargin="50" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a726931f-0122-4081-bf06-3938a2038efe">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="720"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<import value="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+
+	<parameter name="param1" class="java.lang.String"/>
+
+	<detail>
+		<band height="115" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="0" y="15" width="500" height="5" uuid="0221fcb1-548f-491a-9d75-a0d047d70c58"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["Simple Report"]]></textFieldExpression>
+			</textField>
+			<elementGroup>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="35" width="135" height="10" uuid="92e27338-cb57-40a5-bb30-eb3c70eb0171"/>
+					<textElement markup="html"/>
+					<textFieldExpression><![CDATA["Parameter:"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="135" y="35" width="182" height="10" uuid="991166cc-a14a-41a8-852f-c8f7de84a13e"/>
+					<textElement markup="html"/>
+					<textFieldExpression><![CDATA[$P{param1}]]></textFieldExpression>
+				</textField>
+			</elementGroup>
+		</band>
+	</detail>
+</jasperReport>
